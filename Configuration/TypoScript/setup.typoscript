@@ -1,0 +1,17 @@
+plugin.tx_usercredits {
+  view {
+    layoutRootPaths {
+      0 = EXT:usercredits/Resources/Private/Layouts/
+      1 = {$plugin.tx_usercredits.view.layoutRootPath}
+    }
+    templateRootPaths {
+      0 = EXT:usercredits/Resources/Private/Templates/
+      1 = {$plugin.tx_usercredits.view.templateRootPath}
+    }
+
+    partialRootPaths {
+      0 = EXT:usercredits/Resources/Private/Partials/
+      1 = {$plugin.tx_usercredits.view.partialRootPath}
+    }
+  }
+}
