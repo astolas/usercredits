@@ -28,7 +28,7 @@ class FrontendUser extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
    *
    * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\ErikKonrad\Usercredits\Domain\Model\Credits>
    */
-  public function setTxUsercreditsDomainModelCredits($credits)
+  public function setCredits($credits)
   {
       $this->credits = $credits;
   }
@@ -40,7 +40,7 @@ class FrontendUser extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
    */
   public function getBalance()
   {
-      \TYPO3\CMS\Core\Utility\DebugUtility::var_dump($balance);
+      \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump('PING');
       $balanceArray = $this->getCredits();
       $balance = 0;
       foreach($balanceArray as $creditItem)
