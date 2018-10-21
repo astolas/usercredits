@@ -40,14 +40,12 @@ class FrontendUser extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
    */
   public function getBalance()
   {
-      \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump('PING');
-      $balanceArray = $this->getCredits();
-      $balance = 0;
-      foreach($balanceArray as $creditItem)
-      {
-        $balance = $balance + $creditItem['amount'];
-      }
-
-      return $this->$balance;
+    $credits = $this->getCredits();
+    $balance = 0;
+    foreach($credits as $credit)
+    {
+      $balance = $balance + $credit->getAmount();
+    }
+    return $balance;
   }
 }
