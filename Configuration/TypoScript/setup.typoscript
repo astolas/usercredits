@@ -14,4 +14,13 @@ plugin.tx_usercredits {
       1 = {$plugin.tx_usercredits.view.partialRootPath}
     }
   }
+  persistence {
+    classes {
+      ErikKonrad\Usercredits\Domain\Model\FrontendUser {
+        mapping {
+          tableName = fe_users
+        }
+      }
+    }
+  }
 }

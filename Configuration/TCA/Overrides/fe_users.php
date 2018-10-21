@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') or die();
 
 
-$GLOBALS['TCA']['fe_users']['columns']['tx_usercredits_domain_model_credits'] = [
+$GLOBALS['TCA']['fe_users']['columns']['credits'] = [
   'label' => 'User Credits',
   'config' => [
     'type' => 'inline',
@@ -23,4 +23,4 @@ $GLOBALS['TCA']['fe_users']['columns']['tx_usercredits_domain_model_credits'] = 
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('fe_users',
-    '--div--;User Credits, tx_usercredits_domain_model_credits', '', 'after:lastlogin');
+    '--div--;User Credits, credits', '', 'after:lastlogin');

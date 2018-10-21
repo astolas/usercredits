@@ -17,6 +17,6 @@ CREATE TABLE tx_usercredits_domain_model_credits (
 #
 CREATE TABLE fe_users (
 
-	tx_usercredits_domain_model_credits int(11) DEFAULT '0' NOT NULL,
+	credits int(11) DEFAULT '0' NOT NULL,
 
 );
