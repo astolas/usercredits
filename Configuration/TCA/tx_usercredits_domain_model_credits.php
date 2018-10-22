@@ -18,6 +18,7 @@ $tx_usercredits_domain_model_credits = [
         'default_sortby' => 'ORDER BY sorting',
         'sortby' => 'sorting',
         'delete' => 'deleted',
+        'hideTable' => 1,
         'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
@@ -28,7 +29,7 @@ $tx_usercredits_domain_model_credits = [
         'searchFields' => 'uid,description,amount',
     ],
     'interface' => [
-        'showRecordFieldList' => 'cruser_id,pid,sys_language_uid,l10n_parent,l10n_diffsource,hidden,starttime,endtime,fe_group,title,teaser,bodytext,datetime,archive,author,author_email,categories,related,type,keywords,media,internalurl,externalurl,istopnews,related_files,related_links,content_elements,tags,path_segment,alternative_title,fal_related_files'
+        'showRecordFieldList' => 'cruser_id,pid,sys_language_uid,l10n_parent,l10n_diffsource,hidden,starttime,endtime,title,description,amount'
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -214,6 +215,5 @@ $tx_usercredits_domain_model_credits = [
     ],
     'palettes' => []
 ];
-
 
 return $tx_usercredits_domain_model_credits;

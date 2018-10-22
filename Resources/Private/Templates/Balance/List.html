@@ -5,6 +5,25 @@
 
 <f:section name="Content">
 
-	<f:debug>{_all}</f:debug>
+<table>
+	<tr>
+		<td>Title</td>
+			<td>Description</td>
+			<td>Amount</td>
+	</tr>
+	<f:for each="{frontend_user.credits}" as="credit">
+	<tr>
+		<td>{credit.title}</td>
+			<td>{credit.description}</td>
+			<td>{credit.amount}</td>
+	</tr>
+	</f:for>
+	<tr style="border-top: 1px solid black;" border="1">
+		<td></td>
+			<td>Balance:</td>
+			<td>{frontend_user.balance}</td>
+	</tr>
+</table>
+
 
 </f:section>
